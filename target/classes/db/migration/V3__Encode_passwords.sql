@@ -1,0 +1,1 @@
+--update usr set usr.PASSWORD = md5(usr.password)
