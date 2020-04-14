@@ -50,8 +50,16 @@
             <div class="invalid-feedback">
                 ${emailError}
             </div>
-        </#if>
+            </#if>
+        </div>
     </div>
+    <div class="col-sm-6">
+        <div class="g-recaptcha" data-sitekey="6Lc6aukUAAAAACsN-yWrBpXij_3WHiUAE2TRAw3t"></div>
+        <#if captchaError??>
+            <div class="alert alert-danger" role="alert">
+                ${captchaError}
+            </div>
+        </#if>
     </div>
 </#if>
 <input type="hidden" name="_csrf" value="${_csrf.token}" />
